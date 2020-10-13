@@ -13,10 +13,7 @@ $col: 12;
     @for $i from 1 through 4 {
         .item-#{$i} { left: 20px * $i; } */
 
-    @media (max-width: $max-width - 1) {
-        padding-right: $gutter;
-        padding-left: $gutter;
-    }
+    
 
 }
 

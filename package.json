@@ -7,7 +7,11 @@
     "browser-sync": "browser-sync start --server",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
-    "dev": "concurrently npm:sass-watch npm:browser-sync"
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "lint-css": "stylelint styles.css",
+    "lint-scss": "stylelint styles.scss --syntax scss"
+    
   },
   "keywords": [],
   "author": "",
@@ -16,6 +20,8 @@
     "browser-sync": "^2.26.12",
     "concurrently": "^5.3.0",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "^7.1.0"
   }
 }
-
